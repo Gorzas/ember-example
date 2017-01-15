@@ -1,4 +1,14 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+const {
+  get,
+  Route,
+} = Ember;
+
+export default Route.extend({
+  model() {
+    return get(this, 'store').findAll('post', { reload: true }).then(
+      (collection) => collection.sortBy('createdAt').reverse()
+    );
+  }
 });

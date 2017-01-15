@@ -1,0 +1,16 @@
+.blog-post-meta {
+  color: grey;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.blog-post {
+  border-bottom: 1px #d8d8d8 solid;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.blog-post:last-child {
+  border-bottom: none;
+}
