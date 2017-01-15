@@ -1,0 +1,21 @@
+{{#bs-navbar type='inverse' fluid=fluid as |navbar|}}
+  <div class="navbar-header">
+      {{#navbar.toggle}}
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      {{/navbar.toggle}}
+     {{#link-to "index" class="navbar-brand"}}Ember Example{{/link-to}}
+  </div>
+  {{#navbar.content}}
+      {{#navbar.nav as |nav|}}
+          {{#nav.item}}{{#link-to "index"}}Home{{/link-to}}{{/nav.item}}
+          {{#nav.item}}{{#link-to "posts"}}Posts{{/link-to}}{{/nav.item}}
+      {{/navbar.nav}}
+  {{/navbar.content}}
+{{/bs-navbar}}
+
+<div class="container">
+  {{outlet}}
+</div>
