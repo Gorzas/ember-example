@@ -1,5 +1,6 @@
 <div class="actions">
   {{#link-to 'posts.edit' post}}<i class="glyphicon glyphicon-pencil"></i>{{/link-to}}
+  <a href="#" {{action (route-action 'delete' post)}}><i class="glyphicon glyphicon-trash"></i></a>
 </div>
 <h2>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</h2>
 <p class="blog-post-meta">{{post.createdAt}}</p>
