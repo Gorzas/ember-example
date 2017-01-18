@@ -1,7 +1,1 @@
-{{#bs-form model=model onSubmit=(route-action "submit") novalidate=true as |form|}}
-    {{form.element controlType="text" label="Title" placeholder="Title" property="title"}}
-    {{#form.element label="Text" placeholder="" property="body" as |el|}}
-      {{froala-editor el.value (action (mut el.value)) (hash heightMin=200)}}
-    {{/form.element}}
-    {{bs-button defaultText="Submit" type="primary" buttonType="submit"}}
-{{/bs-form}}
+{{form-blog-post blogPost=model}}

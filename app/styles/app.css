@@ -14,3 +14,7 @@
 .blog-post:last-child {
   border-bottom: none;
 }
+
+.blog-post .actions {
+  float: right;
+}
