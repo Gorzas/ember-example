@@ -1,4 +1,4 @@
-<h2>{{post.title}}</h2>
+<h2>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</h2>
 <p class="blog-post-meta">{{post.createdAt}}</p>
 <div class="blog-post-body">
   {{froala-content content=post.body}}
